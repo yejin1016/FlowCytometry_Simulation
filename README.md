@@ -1,2 +1,3 @@
-# FlowCytometry_Simulation
-Part of the flow cytrometry QC model project, simulating artificial flow cytometry data
+# FlowCytometry Simulation
+* Part of the internship project done in Vrije University Medical Center
+* The scripts belongs to Yejin Park (yejin.park1016@gmail.com)

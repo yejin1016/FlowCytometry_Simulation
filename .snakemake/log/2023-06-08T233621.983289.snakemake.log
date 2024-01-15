@@ -1,0 +1,763 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 20
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+dist_feature       34              1              1
+npb_feature        13              1              1
+stat_feature        7              1              1
+total              55              1              1
+
+Select jobs to execute...
+
+[Thu Jun  8 23:36:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_4.6_0.2_npb10_featured.csv
+    jobid: 163
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_4.6_0.2_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=16, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.2_stat_featured.csv
+    jobid: 102
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.2_stat_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_4.6_0.05_EMD_featured.csv
+    jobid: 305
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_4.6_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_4.6_0.2_EMD_featured.csv
+    jobid: 319
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_4.6_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.05_EMD_featured.csv
+    jobid: 257
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.2_EMD_featured.csv
+    jobid: 271
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.05_EMD_featured.csv
+    jobid: 285
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_5.4_0.2_EMD_featured.csv
+    jobid: 299
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_5.4_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_3.8_0.05_EMD_featured.csv
+    jobid: 313
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_3.8_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_3.8_0.2_npb20_featured.csv
+    jobid: 112
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_3.8_0.2_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=8, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.2_KS_featured.csv
+    jobid: 292
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_4.6_0.2_KS_featured.csv
+    jobid: 320
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_4.6_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_5.4_0.05_npb20_featured.csv
+    jobid: 154
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_5.4_0.05_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_3.8_0.05_stat_featured.csv
+    jobid: 79
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_3.8_0.05_stat_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.05_KS_featured.csv
+    jobid: 258
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_4.6_0.2_KS_featured.csv
+    jobid: 272
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_4.6_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.05_KS_featured.csv
+    jobid: 286
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.05_KS_featured.csv
+    jobid: 314
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.05_npb10_featured.csv
+    jobid: 113
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.05_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Thu Jun  8 23:36:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_5.4_0.2_npb10_featured.csv
+    jobid: 155
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_5.4_0.2_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:00 2023]
+Finished job 112.
+1 of 55 steps (2%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:00 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.2_stat_featured.csv
+    jobid: 104
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.2_stat_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:02 2023]
+Finished job 113.
+2 of 55 steps (4%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:02 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_3.8_0.2_EMD_featured.csv
+    jobid: 255
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_3.8_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:36 2023]
+Finished job 155.
+3 of 55 steps (5%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:36 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.2_EMD_featured.csv
+    jobid: 287
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:39 2023]
+Finished job 154.
+4 of 55 steps (7%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:39 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.2_EMD_featured.csv
+    jobid: 259
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:41 2023]
+Finished job 163.
+5 of 55 steps (9%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:42 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_5.4_0.05_EMD_featured.csv
+    jobid: 273
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_5.4_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:45:56 2023]
+Finished job 79.
+6 of 55 steps (11%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:45:57 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.2_npb10_featured.csv
+    jobid: 115
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.2_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:47:32 2023]
+Finished job 102.
+7 of 55 steps (13%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:47:32 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_4.6_0.2_EMD_featured.csv
+    jobid: 295
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_4.6_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:55:33 2023]
+Finished job 115.
+8 of 55 steps (15%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:55:33 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_4.6_0.2_npb20_featured.csv
+    jobid: 164
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_4.6_0.2_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=16, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Thu Jun  8 23:57:11 2023]
+Finished job 104.
+9 of 55 steps (16%) done
+Select jobs to execute...
+
+[Thu Jun  8 23:57:11 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.2_KS_featured.csv
+    jobid: 260
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:05:46 2023]
+Finished job 164.
+10 of 55 steps (18%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:05:46 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_5.4_0.05_KS_featured.csv
+    jobid: 274
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_5.4_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:14:39 2023]
+Finished job 258.
+11 of 55 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:14:39 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.2_KS_featured.csv
+    jobid: 288
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:14:43 2023]
+Finished job 286.
+12 of 55 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:14:44 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_5.4_0.05_npb20_featured.csv
+    jobid: 178
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_5.4_0.05_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=16, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:14:44 2023]
+Finished job 272.
+13 of 55 steps (24%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:14:44 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_5.4_0.05_stat_featured.csv
+    jobid: 95
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_5.4_0.05_stat_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:25:10 2023]
+Finished job 178.
+14 of 55 steps (25%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:25:10 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_3.8_0.05_KS_featured.csv
+    jobid: 302
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_3.8_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:27:00 2023]
+Finished job 95.
+15 of 55 steps (27%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:27:00 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.2_KS_featured.csv
+    jobid: 316
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:37:04 2023]
+Finished job 260.
+16 of 55 steps (29%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:37:04 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_4.6_0.05_stat_featured.csv
+    jobid: 81
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_4.6_0.05_stat_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:19 2023]
+Finished job 314.
+17 of 55 steps (31%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:19 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_5.4_0.05_KS_featured.csv
+    jobid: 310
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_5.4_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:26 2023]
+Finished job 320.
+18 of 55 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:26 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.05_stat_featured.csv
+    jobid: 103
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.05_stat_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:28 2023]
+Finished job 257.
+19 of 55 steps (35%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:28 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_4.6_0.05_npb10_featured.csv
+    jobid: 137
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_4.6_0.05_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:30 2023]
+Finished job 271.
+20 of 55 steps (36%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:30 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.05_EMD_featured.csv
+    jobid: 269
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:33 2023]
+Finished job 292.
+21 of 55 steps (38%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:33 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_4.6_0.2_EMD_featured.csv
+    jobid: 283
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_4.6_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:35 2023]
+Finished job 285.
+22 of 55 steps (40%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:35 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.05_npb20_featured.csv
+    jobid: 114
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.05_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:45:50 2023]
+Finished job 274.
+23 of 55 steps (42%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:45:50 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.05_KS_featured.csv
+    jobid: 290
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:47:54 2023]
+Finished job 81.
+24 of 55 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:47:54 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.05_KS_featured.csv
+    jobid: 294
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.05_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:54:40 2023]
+Finished job 288.
+25 of 55 steps (45%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:54:40 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.2_KS_featured.csv
+    jobid: 296
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:55:22 2023]
+Finished job 137.
+26 of 55 steps (47%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:55:22 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.2_npb20_featured.csv
+    jobid: 116
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.2_npb20_featured.csv
+    wildcards: n_bins=20, n_marker=8, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:55:31 2023]
+Finished job 114.
+27 of 55 steps (49%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:55:31 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_5.4_0.2_KS_featured.csv
+    jobid: 324
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_5.4_0.2_KS_featured.csv
+    wildcards: dist_metric=KS, n_marker=16, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:55:39 2023]
+Finished job 255.
+28 of 55 steps (51%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:55:39 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.05_stat_featured.csv
+    jobid: 101
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.05_stat_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:56:17 2023]
+Finished job 287.
+29 of 55 steps (53%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:56:17 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_3.8_0.05_npb10_featured.csv
+    jobid: 169
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_3.8_0.05_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:56:24 2023]
+Finished job 259.
+30 of 55 steps (55%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:56:24 2023]
+rule npb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_4.6_0.2_npb10_featured.csv
+    jobid: 151
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_4.6_0.2_npb10_featured.csv
+    wildcards: n_bins=10, n_marker=16, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:56:33 2023]
+Finished job 273.
+31 of 55 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:56:33 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.05_EMD_featured.csv
+    jobid: 289
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 00:57:58 2023]
+Finished job 103.
+32 of 55 steps (58%) done
+Select jobs to execute...
+
+[Fri Jun  9 00:57:58 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.2_EMD_featured.csv
+    jobid: 303
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 01:05:15 2023]
+Finished job 116.
+33 of 55 steps (60%) done
+Select jobs to execute...
+
+[Fri Jun  9 01:05:15 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.2_EMD_featured.csv
+    jobid: 291
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.2_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 01:06:32 2023]
+Finished job 169.
+34 of 55 steps (62%) done
+Select jobs to execute...
+
+[Fri Jun  9 01:06:32 2023]
+rule dist_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.05_EMD_featured.csv
+    jobid: 301
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.05_EMD_featured.csv
+    wildcards: dist_metric=EMD, n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 01:06:36 2023]
+Finished job 151.
+35 of 55 steps (64%) done
+[Fri Jun  9 01:08:02 2023]
+Finished job 101.
+36 of 55 steps (65%) done
+[Fri Jun  9 01:33:08 2023]
+Finished job 302.
+37 of 55 steps (67%) done
+[Fri Jun  9 01:34:32 2023]
+Finished job 316.
+38 of 55 steps (69%) done
+[Fri Jun  9 01:42:01 2023]
+Finished job 319.
+39 of 55 steps (71%) done
+[Fri Jun  9 01:42:16 2023]
+Finished job 299.
+40 of 55 steps (73%) done
+[Fri Jun  9 01:42:25 2023]
+Finished job 305.
+41 of 55 steps (75%) done
+[Fri Jun  9 01:42:38 2023]
+Finished job 313.
+42 of 55 steps (76%) done
+[Fri Jun  9 01:47:31 2023]
+Finished job 310.
+43 of 55 steps (78%) done
+[Fri Jun  9 01:47:33 2023]
+Finished job 269.
+44 of 55 steps (80%) done
+[Fri Jun  9 01:47:41 2023]
+Finished job 290.
+45 of 55 steps (82%) done
+[Fri Jun  9 01:47:53 2023]
+Finished job 283.
+46 of 55 steps (84%) done
+[Fri Jun  9 01:48:27 2023]
+Finished job 294.
+47 of 55 steps (85%) done
+[Fri Jun  9 01:49:24 2023]
+Finished job 295.
+48 of 55 steps (87%) done
+[Fri Jun  9 01:50:59 2023]
+Finished job 296.
+49 of 55 steps (89%) done
+[Fri Jun  9 01:51:14 2023]
+Finished job 324.
+50 of 55 steps (91%) done
+[Fri Jun  9 02:06:08 2023]
+Finished job 303.
+51 of 55 steps (93%) done
+[Fri Jun  9 02:06:17 2023]
+Finished job 289.
+52 of 55 steps (95%) done
+[Fri Jun  9 02:07:21 2023]
+Finished job 291.
+53 of 55 steps (96%) done
+[Fri Jun  9 02:08:01 2023]
+Finished job 301.
+54 of 55 steps (98%) done
+Select jobs to execute...
+
+[Fri Jun  9 02:08:02 2023]
+localrule all:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_3_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_1_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_2_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_3.8_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_3.8_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_4.6_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_4.6_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_5.4_0.05.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/16_3_5.4_0.2.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_3_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_4.6_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_2_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_2_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_3_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_3.8_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_3.8_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_5.4_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_5.4_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_1_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_1_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_2_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_2_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/8_3_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/8_3_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_1_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_1_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_2_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_2_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_3.8_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_3.8_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_3.8_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_3.8_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_4.6_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_4.6_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_4.6_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_4.6_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_5.4_0.05_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_5.4_0.05_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb4_feature/16_3_5.4_0.2_pb4_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb5_feature/16_3_5.4_0.2_pb5_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_2_5.4_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_3_5.4_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_1_5.4_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_2_5.4_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_3.8_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_3.8_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_4.6_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_4.6_0.2_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_5.4_0.05_summary.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/16_3_5.4_0.2_summary.png
+    jobid: 0
+    reason: Input files updated by another job: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_2_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_5.4_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_2_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_3_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_2_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_3_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_4.6_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_5.4_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_3_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_1_5.4_0.2_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_1_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_1_5.4_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_5.4_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_3_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_2_5.4_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/16_1_5.4_0.05_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_3.8_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_3_3.8_0.05_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.2_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_4.6_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_1_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_3_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_2_4.6_0.2_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/8_1_4.6_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb10_feature/16_3_3.8_0.05_npb10_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb20_feature/8_1_3.8_0.2_npb20_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_4.6_0.2_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/16_2_3.8_0.05_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_2_4.6_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/16_3_3.8_0.05_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/16_2_3.8_0.05_KS_featured.csv
+    resources: tmpdir=/tmp
+
+[Fri Jun  9 02:08:02 2023]
+Finished job 0.
+55 of 55 steps (100%) done
+Complete log: .snakemake/log/2023-06-08T233621.983289.snakemake.log

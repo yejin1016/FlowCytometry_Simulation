@@ -1,0 +1,3 @@
+WildcardErrorin line 25 of /home/gahacat/Documents/GitHub/outlier-detection/snakemake/Snakefile:
+No values given for wildcard 'outlier_n_samples'.
+  File "/home/gahacat/Documents/GitHub/outlier-detection/snakemake/Snakefile", line 25, in <module>

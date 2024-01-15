@@ -1,0 +1,6 @@
+r_packages:
+  - r-dplyr
+  - r-tidyr
+  - r-flowAssist
+  - r-flowFP
+  - r-optparse

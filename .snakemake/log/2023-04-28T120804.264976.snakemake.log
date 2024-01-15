@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule simulation_visualizaion in line 47 of /home/gahacat/Documents/GitHub/outlier-detection/snakemake/Snakefile:
+Missing input files for rule simulation_visualizaion:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.0.png
+    wildcards: n_markers=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.0
+    affected files:
+        /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.0.csv

@@ -1,0 +1,118 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+pb_feature       42              1              1
+total            43              1              1
+
+Select jobs to execute...
+
+[Fri May 19 21:44:48 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv
+    jobid: 205
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:44:48 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.2_5_pb_featured.csv
+    jobid: 248
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.2_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:44:48 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv
+    jobid: 210
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:44:48 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    jobid: 231
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:44:48 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    jobid: 245
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+[Fri May 19 21:47:48 2023]
+Finished job 210.
+1 of 43 steps (2%) done
+Select jobs to execute...
+
+[Fri May 19 21:47:49 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_4_pb_featured.csv
+    jobid: 203
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+[Fri May 19 21:47:52 2023]
+Finished job 205.
+2 of 43 steps (5%) done
+Select jobs to execute...
+
+[Fri May 19 21:47:52 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_4_pb_featured.csv
+    jobid: 251
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+[Fri May 19 21:48:58 2023]
+Error in rule pb_feature:
+    jobid: 245
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.05.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:50:39 2023]
+Error in rule pb_feature:
+    jobid: 231
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:50:47 2023]
+Finished job 203.
+3 of 43 steps (7%) done
+[Fri May 19 21:51:18 2023]
+Finished job 248.
+4 of 43 steps (9%) done
+[Fri May 19 21:52:24 2023]
+Finished job 251.
+5 of 43 steps (12%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-19T214448.311536.snakemake.log

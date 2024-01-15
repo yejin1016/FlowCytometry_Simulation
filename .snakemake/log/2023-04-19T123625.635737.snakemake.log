@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                        count    min threads    max threads
+-----------------------  -------  -------------  -------------
+all                            1              1              1
+simulation_visualizaion        1              1              1
+total                          2              1              1
+
+Select jobs to execute...
+
+[Wed Apr 19 12:36:25 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_10_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_10_0.1.png
+    jobid: 1
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_10_0.1.png
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=10, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Wed Apr 19 12:36:26 2023]
+Error in rule simulation_visualizaion:
+    jobid: 1
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_10_0.1.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_10_0.1.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_10_0.1.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-19T123625.635737.snakemake.log

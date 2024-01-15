@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                        count    min threads    max threads
+-----------------------  -------  -------------  -------------
+all                            1              1              1
+dist_feature                   2              1              1
+npb_feature                    2              1              1
+pb_feature                     2              1              1
+simulate_data                  1              1              1
+simulation_summary             1              1              1
+simulation_visualizaion        1              1              1
+stat_feature                   1              1              1
+total                         11              1              1
+
+Select jobs to execute...
+
+[Tue Jun 13 22:06:48 2023]
+rule simulate_data:
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.2.csv
+    jobid: 2
+    reason: Forced execution
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=10, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Tue Jun 13 22:06:58 2023]
+Error in rule simulate_data:
+    jobid: 2
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.2.csv
+    shell:
+        python3 scripts/simulation.py -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.2.csv -n_samples 1000 -n_marker 8 -n_tweaks 1 -outlier_center_dist 10 -outlier_ratio 0.2
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-06-13T220648.607606.snakemake.log

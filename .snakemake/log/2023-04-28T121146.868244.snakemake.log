@@ -1,0 +1,855 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 20
+Rules claiming more threads will be scaled down.
+Job stats:
+job                        count    min threads    max threads
+-----------------------  -------  -------------  -------------
+all                            1              1              1
+simulate_data                 30              1              1
+simulation_visualizaion       30              1              1
+total                         61              1              1
+
+Select jobs to execute...
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.05.csv
+    jobid: 54
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.2.csv
+    jobid: 40
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.0.csv
+    jobid: 12
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.05.csv
+    jobid: 34
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.15.csv
+    jobid: 48
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.2.csv
+    jobid: 20
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.1.csv
+    jobid: 6
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.0.csv
+    jobid: 32
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.15.csv
+    jobid: 18
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.0.csv
+    jobid: 2
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.05.csv
+    jobid: 4
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.2.csv
+    jobid: 30
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.15.csv
+    jobid: 58
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.05.csv
+    jobid: 44
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.1.csv
+    jobid: 16
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.2.csv
+    jobid: 10
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.05.csv
+    jobid: 24
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.15.csv
+    jobid: 38
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.0.csv
+    jobid: 52
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 12:11:47 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.2.csv
+    jobid: 60
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:13:58 2023]
+Finished job 32.
+1 of 61 steps (2%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:13:58 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.0.csv
+    jobid: 42
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:03 2023]
+Finished job 12.
+2 of 61 steps (3%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:03 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.05.csv
+    jobid: 14
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.05.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:04 2023]
+Finished job 54.
+3 of 61 steps (5%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:04 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.1.csv
+    jobid: 46
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:04 2023]
+Finished job 44.
+4 of 61 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:04 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv
+    jobid: 56
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:05 2023]
+Finished job 10.
+5 of 61 steps (8%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:05 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.15.csv
+    jobid: 28
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:05 2023]
+Finished job 30.
+6 of 61 steps (10%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:05 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.1.csv
+    jobid: 26
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:05 2023]
+Finished job 2.
+7 of 61 steps (11%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:06 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.0.png
+    jobid: 1
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:06 2023]
+Finished job 20.
+8 of 61 steps (13%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:06 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.2.png
+    jobid: 9
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:06 2023]
+Finished job 52.
+9 of 61 steps (15%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:06 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.0.png
+    jobid: 51
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:06 2023]
+Finished job 58.
+10 of 61 steps (16%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:07 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.0.png
+    jobid: 31
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:07 2023]
+Finished job 16.
+11 of 61 steps (18%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:07 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.1.png
+    jobid: 15
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:07 2023]
+Finished job 6.
+12 of 61 steps (20%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:07 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.15.png
+    jobid: 57
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:08 2023]
+Finished job 40.
+13 of 61 steps (21%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:08 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.1.png
+    jobid: 5
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:08 2023]
+Finished job 34.
+14 of 61 steps (23%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:08 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.05.png
+    jobid: 33
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:09 2023]
+Finished job 4.
+15 of 61 steps (25%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:09 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.05.png
+    jobid: 3
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:09 2023]
+Finished job 18.
+16 of 61 steps (26%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:09 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.15.png
+    jobid: 17
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:09 2023]
+Finished job 24.
+17 of 61 steps (28%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:09 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.05.png
+    jobid: 23
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:11 2023]
+Finished job 38.
+18 of 61 steps (30%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:11 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.15.png
+    jobid: 37
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:12 2023]
+Finished job 60.
+19 of 61 steps (31%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:12 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.2.png
+    jobid: 59
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:14:12 2023]
+Finished job 48.
+20 of 61 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:14:12 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.15.png
+    jobid: 47
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:24 2023]
+Finished job 42.
+21 of 61 steps (34%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:24 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.2.png
+    jobid: 19
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:25 2023]
+Finished job 14.
+22 of 61 steps (36%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:25 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.15.csv
+    jobid: 8
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.15.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:30 2023]
+Finished job 26.
+23 of 61 steps (38%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:30 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.05.png
+    jobid: 13
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:36 2023]
+Finished job 56.
+24 of 61 steps (39%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:36 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.1.png
+    jobid: 55
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:37 2023]
+Finished job 28.
+25 of 61 steps (41%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:37 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.15.png
+    jobid: 27
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:16:39 2023]
+Finished job 46.
+26 of 61 steps (43%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:16:39 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.1.png
+    jobid: 45
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 12:18:55 2023]
+Finished job 8.
+27 of 61 steps (44%) done
+Select jobs to execute...
+
+[Fri Apr 28 12:18:55 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.15.png
+    jobid: 7
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.4_0.15.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.15.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.15
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:08 2023]
+Finished job 33.
+28 of 61 steps (46%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:08 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.2.csv
+    jobid: 50
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.2.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:12 2023]
+Finished job 31.
+29 of 61 steps (48%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:12 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv
+    jobid: 36
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:16 2023]
+Finished job 37.
+30 of 61 steps (49%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:16 2023]
+rule simulate_data:
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.0.csv
+    jobid: 22
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.0.csv; Code has changed since last execution
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:20 2023]
+Finished job 51.
+31 of 61 steps (51%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:20 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.0.png
+    jobid: 41
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:29 2023]
+Finished job 57.
+32 of 61 steps (52%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:29 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.2.png
+    jobid: 29
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:29 2023]
+Finished job 3.
+33 of 61 steps (54%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:29 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.05.png
+    jobid: 43
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:31 2023]
+Finished job 5.
+34 of 61 steps (56%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:31 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.1.png
+    jobid: 25
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:32 2023]
+Finished job 1.
+35 of 61 steps (57%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:32 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.05.png
+    jobid: 53
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.05.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.05.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:32 2023]
+Finished job 15.
+36 of 61 steps (59%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:32 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.0.png
+    jobid: 11
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:33 2023]
+Finished job 47.
+37 of 61 steps (61%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:32:33 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.2.png
+    jobid: 39
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:32:38 2023]
+Finished job 9.
+38 of 61 steps (62%) done
+[Fri Apr 28 13:32:41 2023]
+Finished job 17.
+39 of 61 steps (64%) done
+[Fri Apr 28 13:32:41 2023]
+Finished job 23.
+40 of 61 steps (66%) done
+[Fri Apr 28 13:32:45 2023]
+Finished job 59.
+41 of 61 steps (67%) done
+[Fri Apr 28 13:34:19 2023]
+Finished job 50.
+42 of 61 steps (69%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:34:19 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.2.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.2.png
+    jobid: 49
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.2.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.2.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.0, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:34:22 2023]
+Finished job 13.
+43 of 61 steps (70%) done
+[Fri Apr 28 13:34:27 2023]
+Finished job 36.
+44 of 61 steps (72%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:34:27 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.1.png
+    jobid: 35
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.1.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:34:28 2023]
+Finished job 22.
+45 of 61 steps (74%) done
+Select jobs to execute...
+
+[Fri Apr 28 13:34:28 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.0.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.0.png
+    jobid: 21
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.0.png; Input files updated by another job: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.0.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.0
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 13:34:39 2023]
+Finished job 27.
+46 of 61 steps (75%) done
+[Fri Apr 28 13:34:39 2023]
+Finished job 55.
+47 of 61 steps (77%) done
+[Fri Apr 28 13:34:44 2023]
+Finished job 19.
+48 of 61 steps (79%) done
+[Fri Apr 28 13:34:50 2023]
+Finished job 45.
+49 of 61 steps (80%) done
+[Fri Apr 28 13:35:55 2023]
+Finished job 7.
+50 of 61 steps (82%) done
+Terminating processes on user request, this might take some time.
+[Fri Apr 28 13:40:52 2023]
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 29
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.2.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.2.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.2.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule simulation_visualizaion:
+    jobid: 25
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.1.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.1.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.1.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 39
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.2.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.2.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.2.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 21
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.0.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.0.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.2_0.0.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 11
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.0.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.0.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_3.8_0.0.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 35
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.1.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_4.6_0.1.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 49
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.2.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.2.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.2.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 43
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.05.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.05.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.05.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 53
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.05.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.05.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.4_0.05.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 28 13:40:52 2023]
+Error in rule simulation_visualizaion:
+    jobid: 41
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.0.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.0_0.0.csv 2 -out /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/plots/8_2_5.0_0.0.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-04-28T121146.868244.snakemake.log

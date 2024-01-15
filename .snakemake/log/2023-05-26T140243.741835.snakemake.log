@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+all                       1              1              1
+simulation_summary        1              1              1
+total                     2              1              1
+
+Select jobs to execute...
+
+[Fri May 26 14:02:44 2023]
+rule simulation_summary:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.1.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_10_0.1_summary.png
+    jobid: 10
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_10_0.1_summary.png
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=10, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri May 26 14:02:47 2023]
+Finished job 10.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri May 26 14:02:47 2023]
+localrule all:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_1_10_0.1.png, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_1_10_0.1_stat_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb_feature/8_1_10_0.1_10_npb_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/npb_feature/8_1_10_0.1_20_npb_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_10_0.1_4_pb_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_10_0.1_5_pb_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_EMD_feature/8_1_10_0.1_EMD_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/dist_KS_feature/8_1_10_0.1_KS_featured.csv, /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_10_0.1_summary.png
+    jobid: 0
+    reason: Input files updated by another job: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_10_0.1_summary.png
+    resources: tmpdir=/tmp
+
+[Fri May 26 14:02:47 2023]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2023-05-26T140243.741835.snakemake.log

@@ -1,0 +1,69 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                        count    min threads    max threads
+-----------------------  -------  -------------  -------------
+all                            1              1              1
+simulate_data                  1              1              1
+simulation_visualizaion        2              1              1
+stat_feature                   2              1              1
+total                          6              1              1
+
+Select jobs to execute...
+
+[Fri May 26 11:46:05 2023]
+rule simulation_visualizaion:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_0_10_0.1.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_0_10_0.1.png
+    jobid: 1
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_0_10_0.1.png
+    wildcards: n_marker=8, n_tweaks=0, outlier_center_dist=10, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+
+[Fri May 26 11:46:05 2023]
+rule simulate_data:
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_0_10_0.1.csv
+    jobid: 4
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_0_10_0.1.csv
+    wildcards: n_marker=16, n_tweaks=0, outlier_center_dist=10, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+
+[Fri May 26 11:46:05 2023]
+rule stat_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_0_10_0.1.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_0_10_0.1_stat_featured.csv
+    jobid: 5
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_0_10_0.1_stat_featured.csv
+    wildcards: n_marker=8, n_tweaks=0, outlier_center_dist=10, outlier_ratio=0.1
+    resources: tmpdir=/tmp
+
+[Fri May 26 11:46:07 2023]
+Error in rule stat_feature:
+    jobid: 5
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_0_10_0.1_stat_featured.csv
+    shell:
+        python3 scripts/stat_features.py /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_0_10_0.1.csv -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/stat_feature/8_0_10_0.1_stat_featured.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 26 11:46:08 2023]
+Error in rule simulation_visualizaion:
+    jobid: 1
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_0_10_0.1.png
+    shell:
+        python3 scripts/simulation_visualization.py /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_0_10_0.1.csv 0 -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_0_10_0.1.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Terminating processes on user request, this might take some time.
+[Fri May 26 11:46:16 2023]
+Error in rule simulate_data:
+    jobid: 4
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_0_10_0.1.csv
+    shell:
+        python3 scripts/simulation.py -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_0_10_0.1.csv -n_samples 1000 -n_marker 16 -n_tweaks 0 -outlier_center_dist 10 -outlier_ratio 0.1
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-05-26T114605.001647.snakemake.log

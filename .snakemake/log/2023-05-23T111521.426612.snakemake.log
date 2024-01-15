@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+pb_feature        1              1              1
+total             2              1              1
+
+Select jobs to execute...
+
+[Tue May 23 11:15:22 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_3.8_0.2_4_pb_featured.csv
+    jobid: 183
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_3.8_0.2_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2023-05-23T111521.426612.snakemake.log

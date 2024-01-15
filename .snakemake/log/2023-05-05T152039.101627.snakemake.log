@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules simulation_visualizaion and simulation_summary are ambiguous for the file /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_3.4_0.0_summary.png.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	simulation_visualizaion: n_marker=8_2,n_tweaks=3.4,outlier_center_dist=0.0,outlier_ratio=summary
+	simulation_summary: n_marker=8,n_tweaks=2,outlier_center_dist=3.4,outlier_ratio=0.0
+Expected input files:
+	simulation_visualizaion: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_3.4_0.0_summary.csv
+	simulation_summary: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_3.4_0.0.csvExpected output files:
+	simulation_visualizaion: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_3.4_0.0_summary.png
+	simulation_summary: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/plots/8_2_3.4_0.0_summary.png

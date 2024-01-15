@@ -1,0 +1,3 @@
+# set output folder results (without "/" at the end)
+output_folder:
+    "/home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs"

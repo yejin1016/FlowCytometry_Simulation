@@ -1,0 +1,85 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+pb_feature       26              1              1
+total            27              1              1
+
+Select jobs to execute...
+
+[Fri May 19 22:29:23 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.2_5_pb_featured.csv
+    jobid: 208
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.2_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 22:29:23 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_3.8_0.2_4_pb_featured.csv
+    jobid: 243
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_3.8_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 22:29:23 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_4.6_0.05_5_pb_featured.csv
+    jobid: 222
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_4.6_0.05_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 22:29:23 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.2_4_pb_featured.csv
+    jobid: 215
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 22:29:23 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv
+    jobid: 217
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+[Fri May 19 22:32:16 2023]
+Error in rule pb_feature:
+    jobid: 222
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_4.6_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_4.6_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_4.6_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 22:32:38 2023]
+Finished job 208.
+1 of 27 steps (4%) done
+[Fri May 19 22:33:00 2023]
+Finished job 215.
+2 of 27 steps (7%) done
+[Fri May 19 22:34:28 2023]
+Finished job 243.
+3 of 27 steps (11%) done
+[Fri May 19 22:34:45 2023]
+Finished job 217.
+4 of 27 steps (15%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-19T222922.491278.snakemake.log

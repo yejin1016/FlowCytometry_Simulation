@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules npb_feature and pb_feature are ambiguous for the file /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/10npb_feature/8_1_10_0.1_10npb_featured.csv.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	npb_feature: n_bins=10,n_marker=8,n_tweaks=1,outlier_center_dist=10,outlier_ratio=0.1
+	pb_feature: n_marker=8,n_recursion=10n,n_tweaks=1,outlier_center_dist=10,outlier_ratio=0.1
+Expected input files:
+	npb_feature: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.1.csv
+	pb_feature: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_10_0.1.csvExpected output files:
+	npb_feature: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/10npb_feature/8_1_10_0.1_10npb_featured.csv
+	pb_feature: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/10npb_feature/8_1_10_0.1_10npb_featured.csv

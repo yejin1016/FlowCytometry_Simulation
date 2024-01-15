@@ -1,0 +1,98 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 25
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+pb_feature        6              1              1
+total             7              1              1
+
+Select jobs to execute...
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_5.4_0.1_4_pb_featured.csv
+    jobid: 205
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_5.4_0.1_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.1, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.6_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_4.6_0.1_4_pb_featured.csv
+    jobid: 185
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_4.6_0.1_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.1, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_4.2_0.15.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_4.2_0.15_5_pb_featured.csv
+    jobid: 178
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_4.2_0.15_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=4.2, outlier_ratio=0.15, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.8_0.05_5_pb_featured.csv
+    jobid: 164
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.8_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.8_0.1.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.8_0.1_5_pb_featured.csv
+    jobid: 166
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.8_0.1_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.1, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 28 23:56:51 2023]
+rule pb_feature:
+    input: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_3.4_0.05.csv
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.4_0.05_5_pb_featured.csv
+    jobid: 154
+    reason: Missing output files: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_3.4_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=3.4, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+[Fri Apr 28 23:59:09 2023]
+Error in rule pb_feature:
+    jobid: 205
+    output: /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_5.4_0.1_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/simulated/8_2_5.4_0.1.csv -n 4 -o /home/gahacat/Documents/GitHub/outlier-detection/snakemake/outputs/feature_generated/pb_feature/8_2_5.4_0.1_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Apr 29 00:00:00 2023]
+Finished job 185.
+1 of 7 steps (14%) done
+[Sat Apr 29 00:00:05 2023]
+Finished job 154.
+2 of 7 steps (29%) done
+[Sat Apr 29 00:00:09 2023]
+Finished job 178.
+3 of 7 steps (43%) done
+[Sat Apr 29 00:00:12 2023]
+Finished job 164.
+4 of 7 steps (57%) done
+[Sat Apr 29 00:00:16 2023]
+Finished job 166.
+5 of 7 steps (71%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-28T235651.364193.snakemake.log

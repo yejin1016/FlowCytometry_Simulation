@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+all                       1              1              1
+simulation_summary        2              1              1
+total                     3              1              1
+
+Select jobs to execute...
+
+[Tue May 30 21:14:46 2023]
+rule simulation_summary:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.05_summary.png
+    jobid: 329
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.05_summary.png
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.05
+    resources: tmpdir=/tmp
+
+
+[Tue May 30 21:14:46 2023]
+rule simulation_summary:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.2_summary.png
+    jobid: 330
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.2_summary.png
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.2
+    resources: tmpdir=/tmp
+
+[Tue May 30 21:14:47 2023]
+Error in rule simulation_summary:
+    jobid: 329
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.05_summary.png
+    shell:
+        python3 scripts/simulation_summary.py /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.05.csv -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.05_summary.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue May 30 21:14:47 2023]
+Error in rule simulation_summary:
+    jobid: 330
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.2_summary.png
+    shell:
+        python3 scripts/simulation_summary.py /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.2.csv -out /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/summary/8_1_5.4_0.2_summary.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-30T211445.412859.snakemake.log

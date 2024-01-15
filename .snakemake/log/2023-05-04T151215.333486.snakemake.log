@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardErrorin line 88 of /home/gahacat/Documents/GitHub/outlier-detection/snakemake/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'dist_metric'

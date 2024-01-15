@@ -1,0 +1,360 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 20
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+pb_feature       48              1              1
+total            49              1              1
+
+Select jobs to execute...
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_5_pb_featured.csv
+    jobid: 234
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_5_pb_featured.csv
+    jobid: 214
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_4_pb_featured.csv
+    jobid: 213
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    jobid: 245
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv
+    jobid: 217
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=3.8, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    jobid: 231
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv
+    jobid: 210
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_5_pb_featured.csv
+    jobid: 252
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=3, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.05_5_pb_featured.csv
+    jobid: 190
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.05_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_5_pb_featured.csv
+    jobid: 204
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_5_pb_featured.csv
+    jobid: 232
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=3.8, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_4_pb_featured.csv
+    jobid: 239
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_4_pb_featured.csv
+    jobid: 211
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.2_4_pb_featured.csv
+    jobid: 191
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_3.8_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv
+    jobid: 205
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=3.8, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_4_pb_featured.csv
+    jobid: 233
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=4.6, outlier_ratio=0.05, n_recursion=4
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_5_pb_featured.csv
+    jobid: 212
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_5_pb_featured.csv
+    wildcards: n_marker=8, n_tweaks=3, outlier_center_dist=4.6, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.05.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.05_5_pb_featured.csv
+    jobid: 226
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.05_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.05, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_5_pb_featured.csv
+    jobid: 240
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_5_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=2, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=5
+    resources: tmpdir=/tmp
+
+
+[Fri May 19 21:11:05 2023]
+rule pb_feature:
+    input: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.2.csv
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.2_4_pb_featured.csv
+    jobid: 227
+    reason: Missing output files: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.2_4_pb_featured.csv
+    wildcards: n_marker=16, n_tweaks=1, outlier_center_dist=5.4, outlier_ratio=0.2, n_recursion=4
+    resources: tmpdir=/tmp
+
+[Fri May 19 21:12:40 2023]
+Error in rule pb_feature:
+    jobid: 214
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:12:44 2023]
+Error in rule pb_feature:
+    jobid: 226
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_5.4_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_5.4_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:12:46 2023]
+Error in rule pb_feature:
+    jobid: 204
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_2_5.4_0.2.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_2_5.4_0.2_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:12:50 2023]
+Error in rule pb_feature:
+    jobid: 213
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_5.4_0.05.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_5.4_0.05_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:13:15 2023]
+Error in rule pb_feature:
+    jobid: 210
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:13:22 2023]
+Error in rule pb_feature:
+    jobid: 252
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_5.4_0.2.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_5.4_0.2_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:13:47 2023]
+Error in rule pb_feature:
+    jobid: 211
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.2.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:14:01 2023]
+Error in rule pb_feature:
+    jobid: 212
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_4.6_0.2.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_4.6_0.2_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:14:19 2023]
+Error in rule pb_feature:
+    jobid: 191
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.2_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.2.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.2_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:14:22 2023]
+Error in rule pb_feature:
+    jobid: 190
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_1_5.4_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_1_5.4_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:14:49 2023]
+Error in rule pb_feature:
+    jobid: 205
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/8_3_3.8_0.05.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/8_3_3.8_0.05_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:15:14 2023]
+Error in rule pb_feature:
+    jobid: 234
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_4.6_0.05.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_4.6_0.05_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:15:32 2023]
+Error in rule pb_feature:
+    jobid: 239
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_5.4_0.2.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_5.4_0.2_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:16:01 2023]
+Error in rule pb_feature:
+    jobid: 245
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_3_4.6_0.05.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_3_4.6_0.05_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:16:12 2023]
+Error in rule pb_feature:
+    jobid: 232
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_5_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv -n 5 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_5_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:16:55 2023]
+Error in rule pb_feature:
+    jobid: 231
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_2_3.8_0.2.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_2_3.8_0.2_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:17:54 2023]
+Error in rule pb_feature:
+    jobid: 217
+    output: /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv
+    shell:
+        Rscript scripts/flowFP_pb.R -i /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/simulated/16_1_3.8_0.05.csv -n 4 -o /home/gahacat/BI2021/2022-2023/VUMC/snakemake_outputs/feature_generated/pb_feature/16_1_3.8_0.05_4_pb_featured.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri May 19 21:19:57 2023]
+Finished job 233.
+1 of 49 steps (2%) done
+[Fri May 19 21:19:58 2023]
+Finished job 227.
+2 of 49 steps (4%) done
+[Fri May 19 21:19:59 2023]
+Finished job 240.
+3 of 49 steps (6%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-05-19T211104.809453.snakemake.log

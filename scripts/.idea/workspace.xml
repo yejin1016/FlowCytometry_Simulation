@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="014aa0fa-175a-4011-84ae-f87c3d0b29a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Jupyter notebooks/.ipynb_checkpoints/Real_data_processing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jupyter notebooks/Real_data_processing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snakefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Snakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../any.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist_ref_comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/dist_ref_comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flowFP_pb.R" beforeDir="false" afterPath="$PROJECT_DIR$/flowFP_pb.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/npb_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/npb_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation_summary.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation_summary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/stat_features.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2RNjlZbMpPfjcjz6bPLlnT9A3TP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="014aa0fa-175a-4011-84ae-f87c3d0b29a9" name="Changes" comment="" />
+      <created>1687097587196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687097587196</updated>
+      <workItem from="1687097589749" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
